@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+ health:
+   build:
+     context: .
+   ports:
+     - "8000:8000"
+   volumes:
+     - ./health:/health
+   command: >
+      sh -c "export FLASK_APP=app.py && \
+      export FLASK_ENV=development && python app.py 0.0.0.0:8000"

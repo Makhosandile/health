@@ -20,9 +20,9 @@ RUN pip install -r /requirements.txt
 RUN apk del .tmp-build-deps
 
 # Setup directory structure
-RUN mkdir /users
-WORKDIR /users
-COPY ./users/ /users
+RUN mkdir /health
+WORKDIR /health
+COPY ./health/ /health
 
 RUN mkdir -p /vol/web/media
 RUN mkdir -p /vol/web/static
