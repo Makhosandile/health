@@ -4,4 +4,6 @@ pandas==1.2.4
 flake8>=3.6.0,<3.7.0
 requests==2.25.1
 BeautifulSoup4==4.9.0
-pydantic==1.8.1
+#pydantic
+#covid==2.3.1
+plotly==4.14.3

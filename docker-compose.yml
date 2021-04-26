@@ -10,4 +10,4 @@ services:
      - ./health:/health
    command: >
       sh -c "export FLASK_APP=app.py && \
-      export FLASK_ENV=development && python app.py 0.0.0.0:8000"
+      export FLASK_ENV=development && flask run"
